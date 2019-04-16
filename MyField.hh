@@ -3,6 +3,7 @@
 
 #include "UserField.hh"
 
+#include <cstddef>
 #include "G4SystemOfUnits.hh"
 
 #include "G4UniformElectricField.hh"
@@ -23,8 +24,8 @@ class MyField
 {
  public:
 
-//  G4ElectricField* myEMfield;
-  UserField* myEMfield;
+  G4ElectricField* myEMfield;
+//  UserField* myEMfield;
 
   G4EqMagElectricField* myEquation;
   G4MagIntegratorStepper* myStepper;

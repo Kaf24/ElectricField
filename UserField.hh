@@ -8,7 +8,7 @@
 class UserField : public G4ElectricField
 {
   public: 
-   UserField(G4double voltage, G4double rmin, G4double rmax);
+   UserField(G4double voltage, G4double rmin, G4double rmax, G4double det_length);
    ~UserField();
 
    virtual void GetFieldValue(const G4double Point[4], G4double *pField) const;
@@ -16,6 +16,7 @@ class UserField : public G4ElectricField
    G4double fvoltage;
    G4double frmin;
    G4double frmax;
+   G4double fdet_length;
 };
 
 #endif //CPROJECT_userFIELD_HH
